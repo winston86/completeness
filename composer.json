@@ -1,0 +1,28 @@
+{
+  "name": "winston86/completeness",
+  "description": "winston86/completeness. Open source PIM application.",
+  "homepage": "https://kennerpim.de",
+  "license": "GPL-3.0-only",
+  "require": {
+    "kennersoft/kennercore": "~3.25.2",
+    "kennersoft/colored-fields": "~1.7.13",
+    "kennersoft/multi-languages": "~1.14.0",
+    "kennersoft/import-feeds-common": "^3.11.0",
+    "kennersoft/pim": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Completeness\\": "app/"
+    }
+  },
+  "extra": {
+    "treoId": "Completeness",
+    "version": "1.0.0",
+    "name": {
+      "default": "Completeness"
+    },
+    "description": {
+      "default": "Completeness module for KennerPim."
+    }
+  }
+}

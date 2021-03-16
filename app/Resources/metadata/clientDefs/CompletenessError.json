@@ -1,0 +1,62 @@
+{
+  "controller": "controllers/record",
+  "boolFilterList": [
+    "onlyMy"
+  ],
+  "kanbanViewMode": false,
+  "color": null,
+  "iconClass": null,
+  "relationshipPanels": {
+    "products": {
+      "view": "completeness:views/completeness-error/record/panels/errors",
+      "selectBoolFilterList": [
+        "notLinkedWithProductFamily"
+      ],
+      "select": false,
+      "createAction": "createRelatedConfigured",
+      "rowActionsView": "views/record/row-actions/relationship-no-unlink"
+    }
+  },
+  "dynamicLogic": {
+    "fields": {
+      "channels": {
+        "visible": {
+          "conditionGroup": [
+            {
+              "type": "isNotEmpty",
+              "attribute": "productId"
+            }
+          ]
+        },
+        "required": {
+          "conditionGroup": [
+            {
+              "type": "isNotEmpty",
+              "attribute": "productId"
+            }
+          ]
+        }
+      },
+      "scope": {
+        "visible": {
+          "conditionGroup": [
+            {
+              "type": "isNotEmpty",
+              "attribute": "productId"
+            }
+          ]
+        }
+      },
+      "product": {
+        "readOnly": {
+          "conditionGroup": [
+            {
+              "type": "isNotEmpty",
+              "product": "id"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

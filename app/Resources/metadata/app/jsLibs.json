@@ -1,0 +1,7 @@
+{
+    "JsTree": {
+        "path": "client/modules/completeness/lib/tree.jquery.js",
+        "exportsTo": "$",
+        "exportsAs": "jsTree"
+    }
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "rows": [
+      [
+        {
+          "name": "product"
+        },
+        false
+      ],
+      [
+        {
+          "name": "CompletenessError"
+        },
+        false
+      ]
+    ],
+    "style": "default",
+    "label": "Overview"
+  }
+]

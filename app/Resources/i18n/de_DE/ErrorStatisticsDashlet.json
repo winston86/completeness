@@ -1,0 +1,17 @@
+{
+    "listFields": {
+        "generalStatistics": {
+            "product": "DE Products",
+            "category": "DE Categories",
+            "productFamily": "DE Product Families",
+            "attribute": "DE Attributes",
+            "productWithoutAssociatedProduct": "DE Products without Associated Products",
+            "productWithoutCategory": "DE Products without any Category",
+            "productWithoutAttribute": "DE Products without Product Attributes",
+            "productWithoutImage": "DE Products without Image Assets"
+        }
+    },
+    "fields": {
+        "amount": "DE Amount"
+    }
+}

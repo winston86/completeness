@@ -1,0 +1,10 @@
+{
+  "views/login": [
+    "__APPEND__",
+    "completeness"
+  ],
+  "views/header": [
+    "__APPEND__",
+    "completeness"
+  ]
+}
