@@ -18,7 +18,7 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-Espo.define('pim:views/login', 'class-replace!completeness:views/login',
+Espo.define('completeness:views/login', 'class-replace!completeness:views/login',
     Dep => Dep.extend({
 
         getLogoSrc: function () {
