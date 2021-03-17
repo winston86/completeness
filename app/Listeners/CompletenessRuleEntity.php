@@ -32,7 +32,7 @@ use Treo\Core\EventManager\Event;
  * @package Completeness\Listeners
  * @author  m.kokhanskyi@treolabs.com
  */
-class CompletenessEntity extends AbstractEntityListener
+class CompletenessRuleEntity extends AbstractEntityListener
 {
     /**
      * @param Event $event
