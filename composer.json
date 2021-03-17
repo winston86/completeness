@@ -4,7 +4,8 @@
   "homepage": "https://kennerpim.de",
   "license": "GPL-3.0-only",
   "require": {
-    "kennersoft/pim": "*"
+    "kennersoft/pim": "*",
+    "idct/composer-directory-installer": "1.0.*"
   },
   "autoload": {
     "psr-4": {
@@ -19,6 +20,10 @@
     },
     "description": {
       "default": "Completeness module for KennerPim."
+    },
+    "installer-paths":{
+      "./client/": ["client/"],
+      "./": ["../kennersoft/completeness"]
     }
   }
 }
