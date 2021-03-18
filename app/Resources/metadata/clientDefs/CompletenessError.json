@@ -12,8 +12,8 @@
     "list": "completeness:views/list"
   },
   "recordViews": {
-    "detail": "completeness:views/completeness-rule/record/detail",
-    "list": "completeness:views/completeness-rule/record/list"
+    "detail": "completeness:views/completeness-error/record/detail",
+    "list": "completeness:views/completeness-error/record/list"
   },
   "relationshipPanels": {
     "Product": {
@@ -21,7 +21,7 @@
       "selectBoolFilterList": [
         "notLinkedProducts"
       ],
-      "view": "completeness:views/completeness-rule/record/panels/completeness-errors",
+      "view": "completeness:views/completeness-error/record/panels/completeness-errors",
       "aclScopesList": [
         "Products"
       ]
