@@ -15,12 +15,6 @@
     "detail": "completeness:views/detail",
     "list": "completeness:views/list"
   },
-  "addRelationPipelines": {
-    "productCategories": [
-      "__APPEND__",
-      "pim:views/product-category/pipe/action-update-filters"
-    ]
-  },
   "recordViews": {
     "detail": "completeness:views/completeness-error/record/detail",
     "list": "completeness:views/completeness-error/record/list"

@@ -82,30 +82,6 @@ abstract class AbstractController extends Base
     }
 
     /**
-     * Validate Post action
-     *
-     * @param Request $request
-     *
-     * @return bool
-     * @throws Exceptions\BadRequest
-     * @throws Exceptions\Forbidden
-     */
-    public function isCreateAction(Request $request)
-    {
-        // is post?
-        if (!$request->isPost()) {
-            throw new Exceptions\BadRequest();
-        }
-
-        // is granted?
-        if (!$this->getAcl()->check($this->name, 'create')) {
-            throw new Exceptions\Forbidden();
-        }
-
-        return true;
-    }
-
-    /**
      * Validate delete action
      *
      * @param Request $request
@@ -123,30 +99,6 @@ abstract class AbstractController extends Base
 
         // is granted?
         if (!$this->getAcl()->check($this->name, 'delete')) {
-            throw new Exceptions\Forbidden();
-        }
-
-        return true;
-    }
-
-    /**
-     * Validate mass update action
-     *
-     * @param Request $request
-     *
-     * @return bool
-     * @throws Exceptions\BadRequest
-     * @throws Exceptions\Forbidden
-     */
-    public function isMassUpdateAction(Request $request)
-    {
-        // is put?
-        if (!$request->isPut()) {
-            throw new Exceptions\BadRequest();
-        }
-
-        // is granted?
-        if (!$this->getAcl()->check($this->name, 'edit')) {
             throw new Exceptions\Forbidden();
         }
 

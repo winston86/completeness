@@ -30,7 +30,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '436f21915831dfbbe5b4390260e6540b584006ed',
+    'reference' => '56aec98b0b55552e72f3475d07ea9c8ef3e026fa',
     'name' => 'winston86/completeness',
   ),
   'versions' => 
@@ -42,7 +42,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '436f21915831dfbbe5b4390260e6540b584006ed',
+      'reference' => '56aec98b0b55552e72f3475d07ea9c8ef3e026fa',
     ),
   ),
 );
