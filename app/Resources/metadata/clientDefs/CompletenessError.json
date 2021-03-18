@@ -12,24 +12,10 @@
     "export"
   ],
   "views": {
-    "detail": "completeness:views/detail",
     "list": "completeness:views/list"
   },
   "recordViews": {
-    "detail": "completeness:views/completeness-error/record/detail",
     "list": "completeness:views/completeness-error/record/list"
-  },
-  "relationshipPanels": {
-    "Product": {
-      "selectAction": "selectRelatedEntity",
-      "selectBoolFilterList": [
-        "notLinkedProducts"
-      ],
-      "view": "completeness:views/completeness-error/record/panels/completeness-errors",
-      "aclScopesList": [
-        "Products"
-      ]
-    }
   },
   "dynamicLogic": {
     "fields": {

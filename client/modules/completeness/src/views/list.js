@@ -21,8 +21,10 @@
 Espo.define('completeness:views/list', 'views/list',
     Dep => Dep.extend({
 
+    	editable: false,
+
         setup() {
-           
+
             Dep.prototype.setup.call(this);
         }
     })

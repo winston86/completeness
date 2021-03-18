@@ -18,28 +18,6 @@
     "ScheduledJob": {
       "type": "link",
       "required": true
-    },
-    "modifiedAt": {
-        "type": "datetime",
-        "readOnly": true
-    },
-    "createdBy": {
-        "type": "link",
-        "readOnly": true,
-        "view": "views/fields/user"
-    },
-    "modifiedBy": {
-        "type": "link",
-        "readOnly": true,
-        "view": "views/fields/user"
-    },
-    "assignedUser": {
-        "type": "link",
-        "view": "views/fields/assigned-user"
-    },
-    "teams": {
-        "type": "linkMultiple",
-        "view": "views/fields/teams"
     }
   },
   "links": {
@@ -57,7 +35,8 @@
   "collection": {
     "asc": false,
     "textFilterFields": [
-      "name"
+      "name",
+      "Product"
     ],
     "fullTextSearch": false
   },
