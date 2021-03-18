@@ -6,10 +6,6 @@
       "trim": true,
       "isMultilang": false
     },
-    "createdAt": {
-      "type": "datetime",
-      "readOnly": true
-    },
     "Product": {
       "type": "link",
       "required": true
@@ -23,7 +19,6 @@
     }
   },
   "collection": {
-    "sortBy": "createdAt",
     "asc": false,
     "textFilterFields": [
       "name"
@@ -35,10 +30,6 @@
       "columns": [
         "name"
       ]
-    },
-    "createdAt": {
-        "type": "index",
-        "columns": ["createdAt"]
     }
   }
 }
