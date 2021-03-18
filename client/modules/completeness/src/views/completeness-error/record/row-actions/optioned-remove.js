@@ -22,13 +22,14 @@ Espo.define('completeness:views/completeness-error/record/row-actions/optioned-r
     Dep=> Dep.extend({
 
         getActionList: function () {
-            var list = [{
+            var list = [];
+            /*list = [{
                 action: 'quickView',
                 label: 'View',
                 data: {
                     id: this.model.id
                 }
-            }];
+            }];*/
             if (this.options.acl.edit) {
                 if (!this.model.get('isSystem')) {
                     list = list.concat([
