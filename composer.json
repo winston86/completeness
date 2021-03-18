@@ -24,7 +24,7 @@
     }
   },
   "scripts": {
-    "post-install-cmd": ["cp -R ./client ../../../", "cp -R ../completeness ../../kennersoft/"],
-    "post-update-cmd": ["cp -R ./client ../../../", "cp -R ../completeness ../../kennersoft"]
+    "post-install-cmd": ["cp -R ./client ../../../", "cp -R ../completeness ../../kennersoft/", "rm -r ../completeness"],
+    "post-update-cmd": ["cp -R ./client ../../../", "cp -R ../completeness ../../kennersoft/", "rm -r ../completeness"]
   }
 }
