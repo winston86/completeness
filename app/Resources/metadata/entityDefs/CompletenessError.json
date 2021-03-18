@@ -6,12 +6,6 @@
       "trim": true,
       "isMultilang": false
     },
-    "delete": {
-      "type": "tinyint",
-      "required": true,
-      "trim": true,
-      "isMultilang": false
-    },
     "createdAt": {
       "type": "datetime",
       "readOnly": true
@@ -41,6 +35,10 @@
       "columns": [
         "name"
       ]
+    },
+    "createdAt": {
+        "type": "index",
+        "columns": ["createdAt"]
     }
   }
 }
