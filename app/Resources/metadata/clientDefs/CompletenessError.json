@@ -29,7 +29,7 @@
   },
   "dynamicLogic": {
     "fields": {
-      "completenessRuleTemplate": {
+      "completenessErrorTemplate": {
         "visible": {
           "conditionGroup": [
             {

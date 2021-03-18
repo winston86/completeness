@@ -1,6 +1,6 @@
 {
   "fields": {
-    "CompletenessRule": "Completeness Error",
+    "CompletenessError": "Completeness Error",
     "product": "Product",
     "isRequired": "Is required"
   },

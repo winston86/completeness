@@ -35,7 +35,7 @@ class CompletenessError extends AbstractSelectManager
    protected function boolFilterNotLinkedWithProduct(&$result)
     {
 
-        $completenessRuleIds = $this->getEntityManager()
+        $completenessErrorIds = $this->getEntityManager()
             ->getRepository('CompletenessError')
             ->select(['id'])
             ->join(['products'])
@@ -46,7 +46,7 @@ class CompletenessError extends AbstractSelectManager
             ->toArray();
 
         $result['whereClause'][] = [
-            'id!=' => array_column($completenessRuleIds, 'id')
+            'id!=' => array_column($completenessErrorIds, 'id')
         ];
     }
 }

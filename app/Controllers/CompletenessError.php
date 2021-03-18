@@ -46,11 +46,8 @@ class CompletenessError extends AbstractController
         return $this
             ->getEntityManager()
             ->getRepository('Product')
-            ->join('completenessRule')
             ->join('completenessError')
             ->where([
-                'completenessRule.id' => $request->get('attributeId'), 
-                'completenessError.completeness_rule_id' => 'completenessRule.id',
                 'product.id' => 'completenessError.product_id',
                 'product.deleted' => 0],
             )
