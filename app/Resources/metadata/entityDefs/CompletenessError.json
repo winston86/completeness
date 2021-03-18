@@ -6,16 +6,6 @@
       "trim": true,
       "isMultilang": false
     },
-    "delete": {
-      "type": "tinyint",
-      "required": true,
-      "trim": true,
-      "isMultilang": false
-    },
-    "createdAt": {
-      "type": "datetime",
-      "readOnly": true
-    },
     "Product": {
       "type": "link",
       "required": true
