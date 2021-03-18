@@ -5,7 +5,7 @@
     "isRequired": "Ist nötig"
   },
   "links": {
-    "CompletenessRule": "Vollständigkeit Regel",
+    "CompletenessError": "Vollständigkeit Regel",
     "product": "Produkt"
   },
   "labels": {
