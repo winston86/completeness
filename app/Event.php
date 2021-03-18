@@ -37,7 +37,7 @@ class Event extends AbstractEvent
      */
     protected $searchEntities
         = [
-            'Completeness',
+            'CompletenessError',
         ];
 
     /**

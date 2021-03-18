@@ -23,49 +23,25 @@ declare(strict_types=1);
 
 namespace Completeness\Listeners;
 
-use Espo\Core\Exceptions\BadRequest;
+use Treo\Listeners\AbstractListener;
 use Treo\Core\EventManager\Event;
 
 /**
- * Class ProductFamilyEntity
+ * Class CompletenessErrorController
  *
- * @package Completeness\Listeners
- * @author  m.kokhanskyi@treolabs.com
+ * @author r.zablodskiy@treolabs.com
  */
-class CompletenessRuleEntity extends AbstractEntityListener
+class CompletenessErrorController extends AbstractListener
 {
     /**
      * @param Event $event
-     *
-     * @throws BadRequest
      */
-    public function beforeSave(Event $event)
+    public function afterActionListLinked(Event $event)
     {
-        // get entity
-        $entity = $event->getArgument('entity');
+        // get data
+        $data = $event->getArguments();
 
-        if (!$this->isRegexpValid($entity)) {
-            throw new BadRequest(
-                $this->translate(
-                    'Regexp is invalid or empty',
-                    'exceptions',
-                    'Global'
-                )
-            );
-        }
+        // set data
+        $event->setArgument('result', $data['result']);
     }
-
-    /**
-     * @param Event $event
-     *
-     * @throws BadRequest
-     */
-    public function beforeRemove(Event $event)
-    {
-        // get entity
-        $entity = $event->getArgument('entity');
-
-        $this->validRelationsWithProduct($entity->id);
-    }
-
 }

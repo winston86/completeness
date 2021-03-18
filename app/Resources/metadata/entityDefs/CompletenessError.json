@@ -2,32 +2,31 @@
   "fields": {
     "name": {
       "type": "varchar",
-      "trim": true
+      "required": true,
+      "trim": true,
+      "isMultilang": false
     },
-    "ComletenessRule": {
-      "type": "link",
-      "required": true
-    },
-    "product": {
-      "type": "link",
-      "required": true
+    "delete": {
+      "type": "tinyint",
+      "required": true,
+      "trim": true,
+      "isMultilang": false
     },
     "createdAt": {
       "type": "datetime",
       "readOnly": true
     },
+    "Product": {
+      "type": "link",
+      "required": true
+    }
   },
   "links": {
-    "ComletenessRule": {
-      "type": "belongsTo",
-      "foreign": "completenessError",
-      "entity": "CompletenessRule"
-    },
-    "product": {
+    "Product": {
       "type": "belongsTo",
       "foreign": "completenessError",
       "entity": "Product"
-    },
+    }
   },
   "collection": {
     "sortBy": "createdAt",
@@ -40,8 +39,7 @@
   "indexes": {
     "name": {
       "columns": [
-        "name",
-        "deleted"
+        "name"
       ]
     }
   }

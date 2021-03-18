@@ -32,5 +32,21 @@ use Completeness\Core\SelectManagers\AbstractSelectManager;
  */
 class CompletenessError extends AbstractSelectManager
 {
-   
+   protected function boolFilterNotLinkedWithProduct(&$result)
+    {
+
+        $completenessRuleIds = $this->getEntityManager()
+            ->getRepository('CompletenessError')
+            ->select(['id'])
+            ->join(['products'])
+            ->where([
+                'products.Id' => (string)$this->getSelectCondition('notLinkedWithProduct'),
+            ])
+            ->find()
+            ->toArray();
+
+        $result['whereClause'][] = [
+            'id!=' => array_column($completenessRuleIds, 'id')
+        ];
+    }
 }

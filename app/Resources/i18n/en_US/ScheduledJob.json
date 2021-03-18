@@ -1,0 +1,20 @@
+{
+  "options": {
+    "job": {
+      "CompletenessCheckCategorySet": "Completeness / Check Category Setup",
+      "CompletenessCheckChannelSet": "Completeness / Check Channel Setup",
+      "CompletenessCheckDuplicatedMPN": "Completeness / Check Duplicate MPNs",
+      "CompletenessCheckDuplicatedSKU": "Completeness / Check Duplicate SKUs",
+      "CompletenessCheckDuplicatedTitle": "Completeness / Check Duplicate Titles",
+      "CompletenessCheckEmpty": "Completeness / Check Required Attributes (is empty)",
+      "CompletenessCheckImage": "Completeness / Check Image",
+      "CompletenessCheckMissedMPN": "Completeness / Check Missed MPNs",
+      "CompletenessCheckMissedSKU": "Completeness / Check Missed SKUs",
+      "CompletenessCheckSpelling": "Completeness / Spelling Check"
+    }
+  },
+  "exceptions": {
+    "Wrong crontab configuration": "Wrong crontab configuration",
+    "Spelling error": "Spelling error"
+  }
+}

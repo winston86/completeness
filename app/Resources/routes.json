@@ -45,11 +45,11 @@
     }
   },
   {
-    "route": "/CompletenessRule/:CompletenessRuleId/productsCount",
+    "route": "/CompletenessError/:CompletenessErrorId/productsCount",
     "method": "get",
     "params": {
-      "controller": "CompletenessRule",
+      "controller": "CompletenessError",
       "action": "productsCount"
     }
-  },
+  }
 ]

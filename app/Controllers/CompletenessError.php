@@ -22,13 +22,39 @@ declare(strict_types=1);
 
 namespace Completeness\Controllers;
 
-use Espo\Core\Templates\Controllers\Base;
+use Espo\Core\Exceptions;
+use Slim\Http\Request;
 
 /**
  * Class CompletenessError
  *
  * @author r.ratsun@treolabs.com
  */
-class CompletenessError extends Base
+class CompletenessError extends AbstractController
 {
+
+	 public function actionProductsCount($params, $data, Request $request)
+    {
+        if (!$request->isGet()) {
+            throw new Exceptions\BadRequest();
+        }
+
+        if (!$this->getAcl()->check($this->name, 'read')) {
+            throw new Exceptions\Forbidden();
+        }
+
+        return $this
+            ->getEntityManager()
+            ->getRepository('Product')
+            ->join('completenessRule')
+            ->join('completenessError')
+            ->where([
+                'completenessRule.id' => $request->get('attributeId'), 
+                'completenessError.completeness_rule_id' => 'completenessRule.id',
+                'product.id' => 'completenessError.product_id',
+                'product.deleted' => 0],
+            )
+            ->count();
+    }
+
 }

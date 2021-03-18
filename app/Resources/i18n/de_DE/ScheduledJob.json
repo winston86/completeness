@@ -1,0 +1,21 @@
+{
+  "options": {
+    "job": {
+      "CompletenessCheckCategorySet": "Vollständigkeit / Überprüfen Sie das Kategorie-Setup",
+      "CompletenessCheckChannelSet": "Vollständigkeit / Überprüfen Sie die Kanaleinrichtung",
+      "CompletenessCheckDuplicatedMPN": "Vollständigkeit / Überprüfen Sie doppelte MPNs",
+      "CompletenessCheckDuplicatedSKU": "Vollständigkeit / Überprüfen Sie doppelte SKUs",
+      "CompletenessCheckDuplicatedTitle": "Vollständigkeit / Überprüfen Sie doppelte Titel",
+      "CompletenessCheckEmpty": "Vollständigkeit / Erforderliche Attribute prüfen (ist leer)",
+      "CompletenessCheckImage": "Vollständigkeit / Überprüfen Sie das Bild",
+      "CompletenessCheckMissedMPN": "Vollständigkeit / Überprüfen Sie fehlende MPNs",
+      "CompletenessCheckMissedSKU": "Vollständigkeit / Überprüfen Sie fehlende SKUs",
+      "CompletenessCheckSpelling": "Vollständigkeit / Rechtschreibprüfung "
+    }
+  },
+  "exceptions": {
+    "Wrong crontab configuration": "Falsche Crontab-Konfiguration",
+    "Spelling error": "Rechtschreibfehler"
+
+  }
+}

@@ -18,7 +18,7 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-Espo.define('pim:views/product-family/record/detail', 'views/record/detail',
+Espo.define('completeness:views/completeness-error/record/detail', 'views/record/detail',
     Dep => Dep.extend({
 
         manageAccessDelete() {
