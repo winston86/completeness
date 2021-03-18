@@ -55,6 +55,7 @@ class CompletenessErrorEntity extends AbstractEntityListener
         // }
     }
 
+
     /**
      * @param Event $event
      *
@@ -65,7 +66,7 @@ class CompletenessErrorEntity extends AbstractEntityListener
         // get entity
         $entity = $event->getArgument('entity');
 
-        $this->validRelationsWithProduct($entity->id);
+        // $this->validRelationsWithProduct($entity->id);
     }
 
 }

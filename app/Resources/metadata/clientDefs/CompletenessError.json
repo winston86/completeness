@@ -1,11 +1,15 @@
 {
   "controller": "controllers/record",
   "iconClass": "fas fa-sitemap",
+  "quickCreate": true,
   "boolFilterList": [
     "onlyMy"
   ],
   "disabledMassActions": [
-    "merge"
+    "merge",
+    "removeRelation",
+    "addRelation",
+    "massUpdate"
   ],
   "views": {
     "detail": "completeness:views/detail",
@@ -34,7 +38,7 @@
           "conditionGroup": [
             {
               "type": "isEmpty",
-              "product": "id"
+              "attribute": "id"
             }
           ]
         }
