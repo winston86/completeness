@@ -6,6 +6,10 @@
       "trim": true,
       "isMultilang": false
     },
+    "createdAt": {
+      "type": "datetime",
+      "readOnly": true
+    },
     "Product": {
       "type": "link",
       "required": true
@@ -31,6 +35,10 @@
       "columns": [
         "name"
       ]
+    },
+    "createdAt": {
+        "type": "index",
+        "columns": ["createdAt"]
     }
   }
 }
