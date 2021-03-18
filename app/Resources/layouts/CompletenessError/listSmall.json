@@ -1,8 +1,8 @@
 [
   {
-    "name": "product"
+    "name": "Product"
   },
   {
-    "name": "CompletenessError"
+    "name": "name"
   }
 ]

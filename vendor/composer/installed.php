@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '56aec98b0b55552e72f3475d07ea9c8ef3e026fa',
+    'reference' => 'bfe75b9ee8de4889dc73cbe1370d10d747c4f67b',
     'name' => 'winston86/completeness',
   ),
   'versions' => 
@@ -18,7 +18,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '56aec98b0b55552e72f3475d07ea9c8ef3e026fa',
+      'reference' => 'bfe75b9ee8de4889dc73cbe1370d10d747c4f67b',
     ),
   ),
 );

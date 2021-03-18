@@ -20,7 +20,6 @@
 
 namespace Completeness\Controllers;
 
-use Espo\Core\Templates\Controllers\Base;
 use Espo\Core\Exceptions;
 use Slim\Http\Request;
 
@@ -29,7 +28,7 @@ use Slim\Http\Request;
  *
  * @author r.ratsun <r.ratsun@treolabs.com>
  */
-abstract class AbstractController extends Base
+abstract class AbstractController extends \Espo\Core\Controllers\Record
 {
 
     /**
