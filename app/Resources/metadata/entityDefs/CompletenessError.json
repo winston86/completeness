@@ -6,9 +6,40 @@
       "trim": true,
       "isMultilang": false
     },
+    "severity": {
+      "type": "varchar",
+      "required": false,
+      "isMultilang": false
+    },
     "Product": {
       "type": "link",
       "required": true
+    },
+    "ScheduledJob": {
+      "type": "link",
+      "required": true
+    },
+    "modifiedAt": {
+        "type": "datetime",
+        "readOnly": true
+    },
+    "createdBy": {
+        "type": "link",
+        "readOnly": true,
+        "view": "views/fields/user"
+    },
+    "modifiedBy": {
+        "type": "link",
+        "readOnly": true,
+        "view": "views/fields/user"
+    },
+    "assignedUser": {
+        "type": "link",
+        "view": "views/fields/assigned-user"
+    },
+    "teams": {
+        "type": "linkMultiple",
+        "view": "views/fields/teams"
     }
   },
   "links": {
@@ -16,6 +47,11 @@
       "type": "belongsTo",
       "foreign": "completenessError",
       "entity": "Product"
+    },
+    "ScheduledJob": {
+      "type": "belongsTo",
+      "foreign": "completenessError",
+      "entity": "ScheduledJob"
     }
   },
   "collection": {
