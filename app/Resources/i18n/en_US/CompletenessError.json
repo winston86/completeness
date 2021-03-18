@@ -1,23 +1,19 @@
 {
   "fields": {
-    "productFamily": "Product Family",
-    "attribute": "Attribute",
-    "isRequired": "Is required",
-    "channels": "Channels",
-    "scope": "Scope"
+    "CompletenessRule": "Completeness Error",
+    "product": "Product",
+    "isRequired": "Is required"
   },
   "links": {
-    "productFamily": "Product Family",
-    "attribute": "Attribute",
-    "channels": "Channels"
+    "CompletenessRule": "Completeness Error",
+    "product": "Product"
   },
   "labels": {
-    "Create ProductFamilyAttribute": "Create Product Family Attribute"
   },
-  "options": {
-    "scope": {
-      "Global": "Global",
-      "Channel": "Channel"
-    }
+  "messages": {
+    "Can't remove Completeness Error": "Can't remove Completeness Error"
+  },
+  "exceptions": {
+   
   }
 }

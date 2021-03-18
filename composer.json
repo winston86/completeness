@@ -3,13 +3,19 @@
   "description": "winston86/completeness. Open source PIM application.",
   "homepage": "https://kennerpim.de",
   "license": "GPL-3.0-only",
+  "require": {
+    "mekras/php-speller": "^2.1.4"
+  },
   "autoload": {
     "psr-4": {
       "Completeness\\": "app/"
     }
   },
+  "config": {
+    "vendor-dir": "../../"
+  },
   "extra": {
-    "treoId": "CompletenessModule",
+    "treoId": "Completeness",
     "version": "1.0.x",
     "name": {
       "default": "Completeness"

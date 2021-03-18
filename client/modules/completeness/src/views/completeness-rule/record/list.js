@@ -18,10 +18,10 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-Espo.define('pim:views/product-family/record/list', 'pim:views/record/list',
+Espo.define('completeness:views/completeness-error/record/list', 'completeness:views/record/list',
     Dep => Dep.extend({
 
-        rowActionsView: 'pim:views/product-family/record/row-actions/optioned-remove',
+        rowActionsView: 'completeness:views/completeness-error/record/row-actions/optioned-remove',
 
         massActionRemove() {
             if (!this.allResultIsChecked && this.checkedList && this.checkedList.length) {
@@ -30,7 +30,7 @@ Espo.define('pim:views/product-family/record/list', 'pim:views/record/list',
                     return model && model.get('isSystem');
                 });
                 if (isSystemInSelected) {
-                    Espo.Ui.warning(this.translate('Can\'t remove system Product Family', 'messages', this.scope));
+                    Espo.Ui.warning(this.translate("Can't remove Completeness Error", 'messages', this.scope));
                     return;
                 }
             }

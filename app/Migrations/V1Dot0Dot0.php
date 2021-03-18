@@ -17,36 +17,17 @@ class V1Dot0Dot0 extends Base
      */
     public function up(): void
     {
-        $this->getPDO()->exec("create table completeness_rule (
-            `id` varchar(24) NOT NULL,
-            `name` varchar(255),
-            `delete` tinyint(1),
-            `description` mediumtext,
-            `is_active` tinyint(1) NOT NULL,
-            `created_at` datetime,
-            `modified_at` datetime,
-            `created_by_id` varchar(24),
-            `modified_by_id` varchar(24),
-            `name_en_us` varchar(255),
-            `description_en_us` mediumtext,
-            `name_de_de` varchar(255),
-            `description_de_de` mediumtext,
-            `regexp` varchar(255),
-            `owner_user_id` varchar(24),
-            `assigned_user_id` varchar(24),
-            PRIMARY KEY (id)
-        )");
-        $this->getPDO()->exec("create table completeness_error (
-            `id` varchar(24) NOT NULL,
-            `name` varchar(255),
-            `name_en_us` varchar(255),
-            `name_de_de` varchar(255),
-            `completeness_rule_id` varchar(24),
-            `product_id`  varchar(24),
-            `delete` tinyint(1),
-            `created_at` datetime,
-            PRIMARY KEY (id)
-        )");
+        //create jobs
+        $this->getPDO()->exec("INSERT INTO scheduled_job (id, name, job, status, scheduling, is_internal) VALUES ('CompletenessCheckCategorySet','Completeness/Check Category Setup','CompletenessCheckCategorySet','Active','0 0 * * *',0)");
+        $this->getPDO()->exec("INSERT INTO scheduled_job (id, name, job, status, scheduling, is_internal) VALUES ('CompletenessCheckChannelSet','Completeness/Check Channel Setup','CompletenessCheckChannelSet','Active','0 0 * * *',0)");
+        $this->getPDO()->exec("INSERT INTO scheduled_job (id, name, job, status, scheduling, is_internal) VALUES ('CompletenessCheckDuplicatedMPN','Completeness/Check Duplicated MPN\'s','CompletenessCheckDuplicatedMPN','Active','0 0 * * *',0)");
+        $this->getPDO()->exec("INSERT INTO scheduled_job (id, name, job, status, scheduling, is_internal) VALUES ('CompletenessCheckDuplicatedSKU','Completeness/Check Duplicated SKU\'s','CompletenessCheckDuplicatedSKU','Active','0 0 * * *',0)");
+        $this->getPDO()->exec("INSERT INTO scheduled_job (id, name, job, status, scheduling, is_internal) VALUES ('CompletenessCheckDuplicatedTitle','Completeness/Check Duplicated Title\'s','CompletenessCheckDuplicatedTitle','Active','0 0 * * *',0)");
+        $this->getPDO()->exec("INSERT INTO scheduled_job (id, name, job, status, scheduling, is_internal) VALUES ('CompletenessCheckEmpty','Completeness/Check Required Attributes (is empty)','CompletenessCheckEmpty','Active','0 0 * * *',0)");
+        $this->getPDO()->exec("INSERT INTO scheduled_job (id, name, job, status, scheduling, is_internal) VALUES ('CompletenessCheckImage','Completeness/Check Image','CompletenessCheckImage','Active','0 0 * * *',0)");
+        $this->getPDO()->exec("INSERT INTO scheduled_job (id, name, job, status, scheduling, is_internal) VALUES ('CompletenessCheckMissedMPN','Completeness/Check Missed MPN\'s,'CompletenessCheckMissedMPN','Active','0 0 * * *',0)");
+        $this->getPDO()->exec("INSERT INTO scheduled_job (id, name, job, status, scheduling, is_internal) VALUES ('CompletenessCheckMissedSKU','Completeness/Check Missed SKU\'s,'CompletenessCheckMissedSKU','Active','0 0 * * *',0)");
+        $this->getPDO()->exec("INSERT INTO scheduled_job (id, name, job, status, scheduling, is_internal) VALUES ('CompletenessCheckSpelling','Completeness/Spelling Check','Active','0 0 * * *',0)");
     }
 
     /**
@@ -54,8 +35,16 @@ class V1Dot0Dot0 extends Base
      */
     public function down(): void
     {
-        // delete CoreUpgrade job
-        $this->getPDO()->exec("drop table if exists completeness_rule");
-        $this->getPDO()->exec("drop table if exists completeness_error");
+        // delete jobs
+        $this->getPDO()->exec("delete from scheduled_job where job='CompletenessCheckCategorySet'");
+        $this->getPDO()->exec("delete from scheduled_job where job='CompletenessCheckChannelSet'");
+        $this->getPDO()->exec("delete from scheduled_job where job='CompletenessCheckDuplicatedMPN'");
+        $this->getPDO()->exec("delete from scheduled_job where job='CompletenessCheckDuplicatedSKU'");
+        $this->getPDO()->exec("delete from scheduled_job where job='CompletenessCheckDuplicatedTitle'");
+        $this->getPDO()->exec("delete from scheduled_job where job='CompletenessCheckEmpty'");
+        $this->getPDO()->exec("delete from scheduled_job where job='CompletenessCheckImage'");
+        $this->getPDO()->exec("delete from scheduled_job where job='CompletenessCheckMissedMPN'");
+        $this->getPDO()->exec("delete from scheduled_job where job='CompletenessCheckMissedSKU'");
+        $this->getPDO()->exec("delete from scheduled_job where job='CompletenessCheckSpelling'");
     }
 }

@@ -63,8 +63,6 @@ class Module extends AbstractModule
     {
         parent::loadMetadata($data);
 
-        $this->setLocalesToChannels($data);
-
         // prepare result
         $result = Json::decode(Json::encode($data), true);
 
@@ -82,9 +80,118 @@ class Module extends AbstractModule
      */
     protected function attributeScope(array $result): array
     {
-       
+        /**
+         * Attribute
+         */
+        // $result['clientDefs']['Attribute']['dynamicLogic']['fields']['isMultilang']['visible']['conditionGroup'] = [
+        //     [
+        //         'type'      => 'in',
+        //         'attribute' => 'type',
+        //         'value'     => self::$multiLangTypes
+        //     ]
+        // ];
+        // $result['clientDefs']['Attribute']['dynamicLogic']['fields']['name']['required']['conditionGroup'] = [
+        //     [
+        //         'type'      => 'notIn',
+        //         'attribute' => 'type',
+        //         'value'     => [md5('some-str')]
+        //     ]
+        // ];
 
-        return $result??null;
+        // $result['clientDefs']['Attribute']['dynamicLogic']['fields']['typeValue']['visible']['conditionGroup'] = [
+        //     [
+        //         'type'      => 'in',
+        //         'attribute' => 'type',
+        //         'value'     => [
+        //             'enum',
+        //             'multiEnum',
+        //             'unit'
+        //         ]
+        //     ]
+        // ];
+        // $result['clientDefs']['Attribute']['dynamicLogic']['fields']['typeValue']['required']['conditionGroup'] = [
+        //     [
+        //         'type'      => 'in',
+        //         'attribute' => 'type',
+        //         'value'     => [
+        //             'enum',
+        //             'multiEnum'
+        //         ]
+        //     ]
+        // ];
+        // foreach ($this->getInputLanguageList() as $locale => $key) {
+            /**
+             * Attribute
+             */
+            // $result['clientDefs']['Attribute']['dynamicLogic']['fields']['name' . $key]['required']['conditionGroup'] = [
+            //     [
+            //         'type'      => 'isTrue',
+            //         'attribute' => 'isMultilang'
+            //     ]
+            // ];
+            // $result['clientDefs']['Attribute']['dynamicLogic']['fields']['name' . $key]['visible']['conditionGroup'] = [
+            //     [
+            //         'type'      => 'in',
+            //         'attribute' => 'type',
+            //         'value'     => self::$multiLangTypes
+            //     ],
+            //     [
+            //         'type'      => 'isTrue',
+            //         'attribute' => 'isMultilang'
+            //     ]
+            // ];
+            // $result['clientDefs']['Attribute']['dynamicLogic']['fields']['typeValue' . $key]['visible']['conditionGroup'] = [
+            //     [
+            //         'type'      => 'in',
+            //         'attribute' => 'type',
+            //         'value'     => ['enum', 'multiEnum']
+            //     ],
+            //     [
+            //         'type'      => 'isTrue',
+            //         'attribute' => 'isMultilang'
+            //     ]
+            // ];
+            // $result['clientDefs']['Attribute']['dynamicLogic']['fields']['typeValue' . $key]['required']['conditionGroup'] = [
+            //     [
+            //         'type'      => 'in',
+            //         'attribute' => 'type',
+            //         'value'     => ['enum', 'multiEnum']
+            //     ],
+            //     [
+            //         'type'      => 'isTrue',
+            //         'attribute' => 'isMultilang'
+            //     ]
+            // ];
+
+            // /**
+            //  * ProductAttributeValue
+            //  */
+            // $result['clientDefs']['ProductAttributeValue']['dynamicLogic']['fields']['value' . $key]['visible']['conditionGroup'] = [
+            //     [
+            //         'type'      => 'isTrue',
+            //         'attribute' => 'attributeIsMultilang'
+            //     ]
+            // ];
+            // $result['clientDefs']['ProductAttributeValue']['dynamicLogic']['fields']['value' . $key]['readOnly']['conditionGroup'] = [
+            //     [
+            //         'type'      => 'in',
+            //         'attribute' => 'attributeType',
+            //         'value'     => ['enum', 'multiEnum']
+            //     ]
+            // ];
+            // $result['clientDefs']['ProductAttributeValue']['dynamicLogic']['fields']['value' . $key]['required']['conditionGroup'] = [
+            //     [
+            //         'type'      => 'isTrue',
+            //         'attribute' => 'isRequired'
+            //     ],
+            //     [
+            //         'type'      => 'isTrue',
+            //         'attribute' => 'attributeIsMultilang'
+            //     ]
+            // ];
+        // }
+
+        return $result;
     }
 
     /**
@@ -106,22 +213,5 @@ class Module extends AbstractModule
         return $result;
     }
 
-    /**
-     * @param \stdClass $metadata
-     */
-    protected function setLocalesToChannels(\stdClass &$metadata)
-    {
-        // prepare result
-        $data = Json::decode(Json::encode($metadata), true);
 
-        /** @var Config $config */
-        $config = $this->container->get('config');
-
-        if ($config->get('isMultilangActive', false)) {
-            $data['entityDefs']['Channel']['fields']['locales']['options'] = $config->get('inputLanguageList', []);
-        }
-
-        // set data
-        $metadata = Json::decode(Json::encode($data));
-    }
 }

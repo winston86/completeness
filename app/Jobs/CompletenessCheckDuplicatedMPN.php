@@ -26,11 +26,11 @@ namespace Completeness\Jobs;
 use Espo\Core\Jobs\Base;
 
 /**
- * Class PimCleanup
+ * Class CompletenessCheckDuplicatedMPN
  *
  * @author r.ratsun@treolabs.com
  */
-class CompletenessCleanup extends Base
+class CompletenessCheckDuplicatedMPN extends Base
 {
     /**
      * Run job

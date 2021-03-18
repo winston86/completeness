@@ -1,9 +1,9 @@
 
-Espo.define('pim:views/product-family/record/panels/products', 'views/record/panels/relationship',
+Espo.define('completeness:views/completeness-error/record/panels/products', 'views/record/panels/relationship',
     Dep => Dep.extend({
 
         boolFilterData: {
-            notLinkedWithProductFamily: function () {
+            notLinkedWithCompletenessError: function () {
                 return this.model.id;
             }
         },

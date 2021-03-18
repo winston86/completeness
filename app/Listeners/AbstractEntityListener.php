@@ -55,14 +55,14 @@ abstract class AbstractEntityListener extends AbstractListener
      *
      * @return bool
      */
-    protected function isRegexpValid(Entity $entity): bool
-    {
-        if (!$entity->isAttributeChanged('regexp')) {
-            return true;
-        }
+    // protected function isRegexpValid(Entity $entity): bool
+    // {
+    //     if (!$entity->isAttributeChanged('regexp')) {
+    //         return true;
+    //     }
 
-        return !empty($entity->get('regexp'));
-    }
+    //     return !empty($entity->get('regexp'));
+    // }
 
     /**
      * Entity field is unique?

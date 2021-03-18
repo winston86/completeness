@@ -1,57 +1,39 @@
 {
   "controller": "controllers/record",
+  "iconClass": "fas fa-sitemap",
   "boolFilterList": [
     "onlyMy"
   ],
-  "kanbanViewMode": false,
-  "color": null,
-  "iconClass": null,
+  "disabledMassActions": [
+    "merge"
+  ],
+  "views": {
+    "detail": "completeness:views/detail",
+    "list": "completeness:views/list"
+  },
+  "recordViews": {
+    "detail": "completeness:views/completeness-rule/record/detail",
+    "list": "completeness:views/completeness-rule/record/list"
+  },
   "relationshipPanels": {
-    "products": {
-      "view": "completeness:views/completeness-error/record/panels/errors",
+    "Product": {
+      "selectAction": "selectRelatedEntity",
       "selectBoolFilterList": [
-        "notLinkedWithProductFamily"
+        "notLinkedProducts"
       ],
-      "select": false,
-      "createAction": "createRelatedConfigured",
-      "rowActionsView": "views/record/row-actions/relationship-no-unlink"
+      "view": "completeness:views/completeness-rule/record/panels/completeness-errors",
+      "aclScopesList": [
+        "Products"
+      ]
     }
   },
   "dynamicLogic": {
     "fields": {
-      "channels": {
+      "completenessRuleTemplate": {
         "visible": {
           "conditionGroup": [
             {
-              "type": "isNotEmpty",
-              "attribute": "productId"
-            }
-          ]
-        },
-        "required": {
-          "conditionGroup": [
-            {
-              "type": "isNotEmpty",
-              "attribute": "productId"
-            }
-          ]
-        }
-      },
-      "scope": {
-        "visible": {
-          "conditionGroup": [
-            {
-              "type": "isNotEmpty",
-              "attribute": "productId"
-            }
-          ]
-        }
-      },
-      "product": {
-        "readOnly": {
-          "conditionGroup": [
-            {
-              "type": "isNotEmpty",
+              "type": "isEmpty",
               "product": "id"
             }
           ]
