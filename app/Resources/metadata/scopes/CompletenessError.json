@@ -8,7 +8,7 @@
   "importable": false,
   "notifications": true,
   "stream": false,
-  "disabled": false,
+  "disabled": true,
   "type": "Base",
   "module": "Completeness",
   "object": true,
