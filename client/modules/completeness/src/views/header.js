@@ -30,7 +30,6 @@ Espo.define('completeness:views/header', 'class-replace!completeness:views/heade
                     view: 'completeness:views/fields/overview-errors-filter'
                 });
             }
-
             Dep.prototype.setup.call(this);
         }
 
