@@ -4,7 +4,7 @@
   "homepage": "https://kennerpim.de",
   "license": "GPL-3.0-only",
   "require": {
-    "mekras/php-speller": "^2.1.4"
+    
   },
   "autoload": {
     "psr-4": {
