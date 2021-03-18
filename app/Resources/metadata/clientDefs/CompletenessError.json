@@ -12,11 +12,9 @@
     "export"
   ],
   "views": {
-    "detail": "completeness:views/detail",
     "list": "completeness:views/list"
   },
   "recordViews": {
-    "detail": "completeness:views/completeness-error/record/detail",
     "list": "completeness:views/completeness-error/record/list"
   },
   "dynamicLogic": {

@@ -35,7 +35,8 @@
   "collection": {
     "asc": false,
     "textFilterFields": [
-      "name"
+      "name",
+      "Product"
     ],
     "fullTextSearch": false
   },
