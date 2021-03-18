@@ -1,7 +1,7 @@
 {
   "controller": "controllers/record",
   "iconClass": "fas fa-sitemap",
-  "quickCreate": true,
+  "quickCreate": false,
   "boolFilterList": [
     "onlyMy"
   ],
@@ -9,7 +9,8 @@
     "merge",
     "removeRelation",
     "addRelation",
-    "massUpdate"
+    "massUpdate",
+    "export"
   ],
   "views": {
     "detail": "completeness:views/detail",
