@@ -19,7 +19,7 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-namespace Completeness\Listeners;
+namespace CompletenessModule\Listeners;
 
 use Espo\Core\Utils\Json;
 use Treo\Core\EventManager\Event;

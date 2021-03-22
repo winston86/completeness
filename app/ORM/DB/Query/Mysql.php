@@ -21,7 +21,7 @@
 
 declare(strict_types=1);
 
-namespace Completeness\ORM\DB\Query;
+namespace CompletenessModule\ORM\DB\Query;
 
 use Espo\ORM\DB\Query\Mysql as EspoMysql;
 use Espo\ORM\IEntity;

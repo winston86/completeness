@@ -1,4 +1,4 @@
 {
-  "ErrorStatisticsDashlet": "\\Completeness\\Services\\ErrorStatisticsDashlet",
-  "CompletenessError": "Completeness\\Services\\CompletenessError"
+  "ErrorStatisticsDashlet": "\\CompletenessModule\\Services\\ErrorStatisticsDashlet",
+  "CompletenessModuleError": "CompletenessModule\\Services\\CompletenessModuleError"
 }

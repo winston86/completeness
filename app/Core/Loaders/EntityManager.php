@@ -21,7 +21,7 @@
 
 declare(strict_types=1);
 
-namespace Completeness\Core\Loaders;
+namespace CompletenessModule\Core\Loaders;
 
 /**
  * Class EntityManager
@@ -35,6 +35,6 @@ class EntityManager extends \Treo\Core\Loaders\EntityManager
      */
     protected function getEntityManagerClassName(): string
     {
-        return \Completeness\Core\ORM\EntityManager::class;
+        return \CompletenessModule\Core\ORM\EntityManager::class;
     }
 }

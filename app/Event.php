@@ -21,7 +21,7 @@
 
 declare(strict_types=1);
 
-namespace Completeness;
+namespace CompletenessModule;
 
 use Treo\Core\ModuleManager\AbstractEvent;
 
@@ -37,7 +37,7 @@ class Event extends AbstractEvent
      */
     protected $searchEntities
         = [
-            'CompletenessError',
+            'CompletenessModuleError',
         ];
 
     /**
@@ -45,7 +45,7 @@ class Event extends AbstractEvent
      */
     protected $menuItems
         = [
-            'Completeness'
+            'CompletenessModule'
         ];
 
     /**

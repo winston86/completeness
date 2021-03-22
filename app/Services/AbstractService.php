@@ -21,7 +21,7 @@
 
 declare(strict_types=1);
 
-namespace Completeness\Services;
+namespace CompletenessModule\Services;
 
 use Espo\Core\Templates\Services\Base;
 use Treo\Core\EventManager\Event;

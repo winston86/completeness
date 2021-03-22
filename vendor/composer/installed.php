@@ -6,19 +6,19 @@
     'aliases' => 
     array (
     ),
-    'reference' => '29f76aed3526de06a6577bbff349d4fb5598c849',
-    'name' => 'winston86/completeness',
+    'reference' => 'ccc9cc72002ada12fb3001b8f8d7d86aeeee8d30',
+    'name' => 'winston86/completeness-module',
   ),
   'versions' => 
   array (
-    'winston86/completeness' => 
+    'winston86/completeness-module' => 
     array (
       'pretty_version' => 'dev-develop',
       'version' => 'dev-develop',
       'aliases' => 
       array (
       ),
-      'reference' => '29f76aed3526de06a6577bbff349d4fb5598c849',
+      'reference' => 'ccc9cc72002ada12fb3001b8f8d7d86aeeee8d30',
     ),
   ),
 );

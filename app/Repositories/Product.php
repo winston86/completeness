@@ -21,7 +21,7 @@
 
 declare(strict_types=1);
 
-namespace Completeness\Repositories;
+namespace CompletenessModule\Repositories;
 
 use Espo\ORM\Entity;
 use Espo\Core\Utils\Util;

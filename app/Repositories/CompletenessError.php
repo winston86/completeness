@@ -20,18 +20,18 @@
  */
 declare(strict_types=1);
 
-namespace Completeness\Repositories;
+namespace CompletenessModule\Repositories;
 
 use Espo\Core\Exceptions\BadRequest;
 use Espo\ORM\Entity;
 use Treo\Core\Utils\Util;
 
 /**
- * Class CompletenessError
+ * Class CompletenessModuleError
  *
  * @author r.ratsun@treolabs.com
  */
-class CompletenessError extends AbstractRepository
+class CompletenessModuleError extends AbstractRepository
 {
     /**
      * @var array
@@ -121,7 +121,7 @@ class CompletenessError extends AbstractRepository
      */
     protected function exception(string $key): string
     {
-        return $this->getInjection('language')->translate($key, 'exceptions', 'ProductFamilyAttribute');
+        return $this->getInjection('language')->translate($key, 'exceptions', 'CompletenessModuleError');
     }
 
     /**

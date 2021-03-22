@@ -1,6 +1,6 @@
 [
   {
-    "route": "/Completeness/:controller/:entity_id/:action",
+    "route": "/CompletenessModule/:controller/:entity_id/:action",
     "method": "get",
     "params": {
       "controller": ":controller",
@@ -9,7 +9,7 @@
     }
   },
   {
-    "route": "/Completeness/:controller/:entity_id/:action",
+    "route": "/CompletenessModule/:controller/:entity_id/:action",
     "method": "put",
     "params": {
       "controller": ":controller",
@@ -18,7 +18,7 @@
     }
   },
   {
-    "route": "/Completeness/:controller/:entity_id/:action",
+    "route": "/CompletenessModule/:controller/:entity_id/:action",
     "method": "patch",
     "params": {
       "controller": ":controller",
@@ -27,7 +27,7 @@
     }
   },
   {
-    "route": "/Completeness/:controller/:entity_id/:action",
+    "route": "/CompletenessModule/:controller/:entity_id/:action",
     "method": "delete",
     "params": {
       "controller": ":controller",
@@ -45,10 +45,10 @@
     }
   },
   {
-    "route": "/CompletenessError/:CompletenessErrorId/productsCount",
+    "route": "/CompletenessModuleError/:CompletenessModuleErrorId/productsCount",
     "method": "get",
     "params": {
-      "controller": "CompletenessError",
+      "controller": "CompletenessModuleError",
       "action": "productsCount"
     }
   }
