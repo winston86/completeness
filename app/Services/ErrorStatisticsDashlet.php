@@ -20,7 +20,7 @@
  */
 declare(strict_types=1);
 
-namespace Completeness\Services;
+namespace CompletenessModule\Services;
 
 /**
  * Class GeneralStatisticsDashlet
@@ -45,7 +45,7 @@ class ErrorStatisticsDashlet extends AbstractProductDashletService
                 'name'   => 'productWithShellError',
                 'percent' => (int)$this->getRepository('Product')->select(['id'])->where(
                     [
-                        'id' => $this->getRepository('CompletenessError')->select(['product_id'])
+                        'id' => $this->getRepository('CompletenessModuleError')->select(['product_id'])
                     ])->count()
             ],
             [

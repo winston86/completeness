@@ -1,0 +1,54 @@
+{
+  "fields": {
+    "CompletenessModuleError": "CompletenessModule Error",
+    "product": "Product",
+    "isRequired": "Is required",
+    "completeAttribute": "Complete Attribute",
+    "totalQuality": "Total Quality",
+    "ScheduledJob": "Check Case"
+  },
+  "links": {
+    "CompletenessModuleError": "CompletenessModule Error",
+    "product": "Product"
+  },
+  "labels": {
+  },
+  "names": {
+    "Missed required attribute": "Missed required attribute",
+    "Missed attribute": "Missed attribute",
+    "Missed attribute for product family": "Missed attribute for product family",
+    "Low image dimensions": "Low image dimensions",
+    "High image dimensions": "High image dimensions",
+    "Incorrect aspect ratio": "Incorrect aspect ratio",
+    "Missed image": "Missed image",
+    "Missed Category": "Missed Category",
+    "Missed Channel": "Missed Channel",
+    "Spell check has mistakes": "Spell check has mistakes",
+    "Duplicated Title": "Duplicated Title",
+    "Duplicated SKU": "Duplicated SKU",
+    "Duplicated MPN": "Duplicated MPN",
+    "Missed SKU": "Missed SKU",
+    "Missed MPN": "Missed MPN"
+  },
+  "messages": {
+    "Can't remove CompletenessModule Error": "Can't remove CompletenessModule Error",
+    "Missed required attribute %s > %s": "Missed required attribute %s > %s",
+    "Missed attribute %s > %s": "Missed attribute %s > %s",
+    "Missed attribute %s > %s for product family %s": "Missed attribute %s > %s for product family %s",
+    "Low image dimensions of %s": "Low image dimensions of %s",
+    "High image dimensions of %s": "High image dimensions of %s",
+    "Incorrect aspect ratio of %s": "Incorrect aspect ratio of %s",
+    "Missed image in %s": "Missed image in %s",
+    "Missed Category in %s": "Missed Category in %s",
+    "Missed Channel in %s": "Missed Channel in %s",
+    "Spell check has mistakes in attribute %s. Info: ": "Spell check has mistakes in attribute %s. Info: ",
+    "Duplicated Title > %s in %s": "Duplicated Title > %s in %s",
+    "Duplicated SKU in %s": "Duplicated SKU in %s",
+    "Duplicated MPN in %s": "Duplicated MPN in %s",
+    "Missed SKU in %s": "Missed SKU in %s",
+    "Missed MPN in %s": "Missed MPN in %s"
+  },
+  "exceptions": {
+   
+  }
+}

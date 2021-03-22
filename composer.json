@@ -1,6 +1,6 @@
 {
-  "name": "winston86/completeness",
-  "description": "winston86/completeness. Open source PIM application.",
+  "name": "winston86/completeness-module",
+  "description": "winston86/completeness-module. Open source PIM application.",
   "homepage": "https://kennerpim.de",
   "license": "GPL-3.0-only",
   "require": {
@@ -8,23 +8,33 @@
   },
   "autoload": {
     "psr-4": {
-      "Completeness\\": "app/"
+      "CompletenessModule\\": "app/"
     }
   },
   "config": {
   },
   "extra": {
-    "treoId": "Completeness",
-    "version": "1.0.x",
+    "treoId": "CompletenessModule",
+    "version": "1.0.1",
     "name": {
-      "default": "Completeness"
+      "default": "CompletenessModule"
     },
     "description": {
       "default": "Completeness module for KennerPim."
     }
   },
   "scripts": {
-    "post-install-cmd": ["cp -R ./client ../../../", "cp -R ../completeness ../../kennersoft/"],
-    "post-update-cmd": ["cp -R ./client ../../../", "cp -R ../completeness ../../kennersoft/"]
+    "post-install-cmd": [
+      "cp -R ./client ../kenner", 
+      "mkdir -p ../kenner/vendor/kennersoft/completeness-module",
+      "cp -R ./* ../kenner/vendor/kennersoft/completeness-module", 
+      "rm -r ../kenner/data/cache/*"
+    ],
+    "post-update-cmd": [
+      "cp -R ./client ../kenner", 
+      "mkdir -p ../kenner/vendor/kennersoft/completeness-module",
+      "cp -R ./* ../kenner/vendor/kennersoft/completeness-module", 
+      "rm -r ../kenner/data/cache/*"
+    ]
   }
 }

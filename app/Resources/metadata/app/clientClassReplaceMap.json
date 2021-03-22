@@ -1,10 +1,10 @@
 {
   "views/login": [
     "__APPEND__",
-    "completeness"
+    "completeness-module"
   ],
   "views/header": [
     "__APPEND__",
-    "completeness"
+    "completeness-module"
   ]
 }

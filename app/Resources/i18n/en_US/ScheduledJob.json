@@ -1,16 +1,16 @@
 {
   "options": {
     "job": {
-      "CompletenessCheckCategorySet": "Completeness / Check Category Setup",
-      "CompletenessCheckChannelSet": "Completeness / Check Channel Setup",
-      "CompletenessCheckDuplicatedMPN": "Completeness / Check Duplicate MPNs",
-      "CompletenessCheckDuplicatedSKU": "Completeness / Check Duplicate SKUs",
-      "CompletenessCheckDuplicatedTitle": "Completeness / Check Duplicate Titles",
-      "CompletenessCheckEmpty": "Completeness / Check Required Attributes (is empty)",
-      "CompletenessCheckImage": "Completeness / Check Image",
-      "CompletenessCheckMissedMPN": "Completeness / Check Missed MPNs",
-      "CompletenessCheckMissedSKU": "Completeness / Check Missed SKUs",
-      "CompletenessCheckSpelling": "Completeness / Spelling Check"
+      "CompletenessModuleCheckCategorySet": "CompletenessModule / Check Category Setup",
+      "CompletenessModuleCheckChannelSet": "CompletenessModule / Check Channel Setup",
+      "CompletenessModuleCheckDuplicatedMPN": "CompletenessModule / Check Duplicate MPNs",
+      "CompletenessModuleCheckDuplicatedSKU": "CompletenessModule / Check Duplicate SKUs",
+      "CompletenessModuleCheckDuplicatedTitle": "CompletenessModule / Check Duplicate Titles",
+      "CompletenessModuleCheckEmpty": "CompletenessModule / Check Required Attributes (is empty)",
+      "CompletenessModuleCheckImage": "CompletenessModule / Check Image",
+      "CompletenessModuleCheckMissedMPN": "CompletenessModule / Check Missed MPNs",
+      "CompletenessModuleCheckMissedSKU": "CompletenessModule / Check Missed SKUs",
+      "CompletenessModuleCheckSpelling": "CompletenessModule / Spelling Check"
     }
   },
   "exceptions": {

@@ -21,7 +21,7 @@
 
 declare(strict_types=1);
 
-namespace Completeness\Listeners;
+namespace CompletenessModule\Listeners;
 
 use Espo\ORM\Entity;
 use Espo\Core\ServiceFactory;

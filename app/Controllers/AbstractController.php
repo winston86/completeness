@@ -18,7 +18,7 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-namespace Completeness\Controllers;
+namespace CompletenessModule\Controllers;
 
 use Espo\Core\Templates\Controllers\Base;
 use Espo\Core\Exceptions;

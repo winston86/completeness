@@ -6,6 +6,9 @@
     "name": "name"
   },
   {
+    "name": "ScheduledJob"
+  },
+  {
     "name": "severity"
   }
 ]

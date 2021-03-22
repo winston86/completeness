@@ -21,7 +21,7 @@
 
 declare(strict_types=1);
 
-namespace Completeness;
+namespace CompletenessModule;
 
 use Espo\Core\Utils\Json;
 use Treo\Core\ModuleManager\AbstractModule;

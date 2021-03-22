@@ -1,5 +1,5 @@
 {
-    "view": "completeness:views/dashlets/error-statistics",
+    "view": "completeness-module:views/dashlets/error-statistics",
     "options": {
         "fields": {
             "title": {

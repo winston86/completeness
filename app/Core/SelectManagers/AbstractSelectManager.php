@@ -19,7 +19,7 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-namespace Completeness\Core\SelectManagers;
+namespace CompletenessModule\Core\SelectManagers;
 
 use Espo\Core\Services\Base as BaseService;
 

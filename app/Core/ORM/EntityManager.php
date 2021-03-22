@@ -21,10 +21,10 @@
 
 declare(strict_types=1);
 
-namespace Completeness\Core\ORM;
+namespace CompletenessModule\Core\ORM;
 
-use Completeness\ORM\DB\MysqlMapper;
-use Completeness\ORM\DB\Query\Mysql;
+use CompletenessModule\ORM\DB\MysqlMapper;
+use CompletenessModule\ORM\DB\Query\Mysql;
 
 /**
  * Class of EntityManager

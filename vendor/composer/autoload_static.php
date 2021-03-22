@@ -9,12 +9,12 @@ class ComposerStaticInit8ee23730e4e22bd3b9f832aa38d4992b
     public static $prefixLengthsPsr4 = array (
         'C' => 
         array (
-            'Completeness\\' => 13,
+            'CompletenessModule\\' => 19,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Completeness\\' => 
+        'CompletenessModule\\' => 
         array (
             0 => __DIR__ . '/../..' . '/app',
         ),

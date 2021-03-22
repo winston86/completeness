@@ -1,16 +1,16 @@
 {
   "options": {
     "job": {
-      "CompletenessCheckCategorySet": "Vollständigkeit / Überprüfen Sie das Kategorie-Setup",
-      "CompletenessCheckChannelSet": "Vollständigkeit / Überprüfen Sie die Kanaleinrichtung",
-      "CompletenessCheckDuplicatedMPN": "Vollständigkeit / Überprüfen Sie doppelte MPNs",
-      "CompletenessCheckDuplicatedSKU": "Vollständigkeit / Überprüfen Sie doppelte SKUs",
-      "CompletenessCheckDuplicatedTitle": "Vollständigkeit / Überprüfen Sie doppelte Titel",
-      "CompletenessCheckEmpty": "Vollständigkeit / Erforderliche Attribute prüfen (ist leer)",
-      "CompletenessCheckImage": "Vollständigkeit / Überprüfen Sie das Bild",
-      "CompletenessCheckMissedMPN": "Vollständigkeit / Überprüfen Sie fehlende MPNs",
-      "CompletenessCheckMissedSKU": "Vollständigkeit / Überprüfen Sie fehlende SKUs",
-      "CompletenessCheckSpelling": "Vollständigkeit / Rechtschreibprüfung "
+      "CompletenessModuleCheckCategorySet": "Vollständigkeit / Überprüfen Sie das Kategorie-Setup",
+      "CompletenessModuleCheckChannelSet": "Vollständigkeit / Überprüfen Sie die Kanaleinrichtung",
+      "CompletenessModuleCheckDuplicatedMPN": "Vollständigkeit / Überprüfen Sie doppelte MPNs",
+      "CompletenessModuleCheckDuplicatedSKU": "Vollständigkeit / Überprüfen Sie doppelte SKUs",
+      "CompletenessModuleCheckDuplicatedTitle": "Vollständigkeit / Überprüfen Sie doppelte Titel",
+      "CompletenessModuleCheckEmpty": "Vollständigkeit / Erforderliche Attribute prüfen (ist leer)",
+      "CompletenessModuleCheckImage": "Vollständigkeit / Überprüfen Sie das Bild",
+      "CompletenessModuleCheckMissedMPN": "Vollständigkeit / Überprüfen Sie fehlende MPNs",
+      "CompletenessModuleCheckMissedSKU": "Vollständigkeit / Überprüfen Sie fehlende SKUs",
+      "CompletenessModuleCheckSpelling": "Vollständigkeit / Rechtschreibprüfung "
     }
   },
   "exceptions": {

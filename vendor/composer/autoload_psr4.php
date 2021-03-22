@@ -6,5 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Completeness\\' => array($baseDir . '/app'),
+    'CompletenessModule\\' => array($baseDir . '/app'),
 );

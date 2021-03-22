@@ -1,0 +1,58 @@
+{
+  "fields": {
+    "name": {
+      "type": "varchar",
+      "required": true,
+      "trim": true,
+      "isMultilang": false
+    },
+    "severity": {
+      "type": "varchar",
+      "required": false,
+      "isMultilang": false
+    },
+    "error": {
+      "type": "varchar",
+      "trim": true,
+      "isMultilang": false
+    },
+    "message": {
+      "type": "varchar",
+      "trim": true,
+      "isMultilang": false
+    },
+    "Product": {
+      "type": "link",
+      "required": true
+    },
+    "ScheduledJob": {
+      "type": "link",
+      "required": true
+    }
+  },
+  "links": {
+    "Product": {
+      "type": "belongsTo",
+      "entity": "Product"
+    },
+    "ScheduledJob": {
+      "type": "belongsTo",
+      "entity": "ScheduledJob"
+    }
+  },
+  "collection": {
+    "asc": false,
+    "textFilterFields": [
+      "name",
+      "Product.name"
+    ],
+    "fullTextSearch": false
+  },
+  "indexes": {
+    "name": {
+      "columns": [
+        "name"
+      ]
+    }
+  }
+}

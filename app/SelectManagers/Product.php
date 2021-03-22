@@ -19,10 +19,10 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-namespace Completeness\SelectManagers;
+namespace CompletenessModule\SelectManagers;
 
-use Completeness\Core\SelectManagers\AbstractSelectManager;
-use Completeness\Services\ErrorStatisticsDashlet;
+use CompletenessModule\Core\SelectManagers\AbstractSelectManager;
+use CompletenessModule\Services\ErrorStatisticsDashlet;
 use Treo\Core\Utils\Util;
 
 /**
